@@ -3,8 +3,8 @@ package edu.macalester.cs124.grammar;
 
 /**
  * A context-free grammar, suitable for generating pleasing nonsense. A grammar contains a set of string symbols,
- * and maps those symbols to substitutions. For example, the symbol ‚Äúperson‚Äù might map to a {@link Choice} between
- * two {@link Literal}s, ‚ÄúAlice‚Äù and ‚ÄúBob‚Äù.
+ * and maps those symbols to substitutions. For example, the symbol ‚"person‚" might map to a {@link Choice} between
+ * two {@link Literal}s, ‚"Alice‚" and ‚"Bob‚".
  */
 public class Grammar {
     /**
@@ -13,7 +13,7 @@ public class Grammar {
      * Note that every symbol maps to a {@link Choice}, even if the choice contains only one option.
      * This allows the class to support multiple calls to addSubstitution().
      * 
-     * @param symbol  The lookup key for the symbol (e.g. ‚Äúperson‚Äù in the example at the top of this class)
+     * @param symbol  The lookup key for the symbol (e.g. ‚"person‚" in the example at the top of this class)
      */
     public Choice substitutionForSymbol(String symbol) {
         throw new UnsupportedOperationException("Grammar.substitutionForSymbol() not implemented yet"); // TODO

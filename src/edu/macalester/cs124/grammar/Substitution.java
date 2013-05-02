@@ -6,7 +6,7 @@ package edu.macalester.cs124.grammar;
  */
 public interface Substitution {
     /**
-     * Generates text, appending it to the context’s “result” property. 
+     * Generates text, appending it to the context's "result" property. 
      */
     void generate(GeneratorContext context);
 }
